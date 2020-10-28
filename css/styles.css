@@ -18,31 +18,31 @@ nav a {
     padding-bottom:4px;
     font-size: 1.2em;
     text-decoration: none;
-    color: #E8BE79;
-    font-family: 'Spartan', sans-serif;
-}
-
-nav b {
-    padding:15px;
-    padding-bottom:4px;
-    font-size: 1.2em;
-    text-decoration: none;
     color: #BDBDBD;
     font-family: 'Spartan', sans-serif;
 }
 
-nav a:hover {
-    border-bottom:2px orange solid;
-    font-size: 1.8em;
-    transition: .3s;
-    color: #FFA512;
+nav a[aria-current="page"] {
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #c42f2f;
+    font-family: 'Spartan', sans-serif;
 }
 
-nav b:hover {
-    border-bottom:2px orange solid;
-    font-size: 1.8em;
-    transition: .3s;
+nav a:hover {
+    border-bottom:2px red solid;
+    font-size: 1.5em;
+    transition: .2s;
     color: #F3F3F3;
+}
+
+nav a[aria-current="page"]:hover {
+    border-bottom:2px red solid;
+    font-size: 1.5em;
+    transition: .2s;
+    color: red;
 }
 
 main {
